@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: superpool
 
 steps:
 - task: NodeTool@0
@@ -19,4 +19,4 @@ steps:
     npm install
     npm run build
     npm test
-  displayname: 'npm install,build, and test'
+  displayName: 'npm install,build, and test'
